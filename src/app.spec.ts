@@ -7,6 +7,14 @@ function makeTestFilePath(testFileName: string) {
 }
 
 describe("Test app", () => {
+  test("Invalid data format file", async () => {
+    const res = await request(app)
+      .post("/upload")
+      .attach("file", makeTestFilePath("invalid-format-data"));
+    expect(res.statusCode).toEqual(200);
+    expect(res.body).toHaveProperty("uniqueHouseCount", 0);
+  });
+
   test("Empty file request", async () => {
     const res = await request(app).post("/upload");
     expect(res.statusCode).toEqual(400);
