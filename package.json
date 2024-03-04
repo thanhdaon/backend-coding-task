@@ -1,7 +1,7 @@
 {
   "name": "backend-coding-task",
   "version": "1.0.0",
-  "description": "A solution for backend coding task of round 1 | Picket Homes Interview",
+  "description": "A solution for backend coding task",
   "main": "src/index.ts",
   "scripts": {
     "start": "tsx src/index.ts",
