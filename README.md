@@ -1,4 +1,4 @@
-# Solution for Backend coding test - Picket Homes
+# Solution for Backend coding test
 
 ## Techstack
 
