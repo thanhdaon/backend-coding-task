@@ -3,6 +3,7 @@
 ## Techstack
 
 - nodejs
+- pnpm
 - express
 - jest
 - Typescript

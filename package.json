@@ -1,26 +1,28 @@
 {
-  "name": "typescript-starter",
+  "name": "backend-coding-task",
   "version": "1.0.0",
-  "description": "A basic typescript app starter for 2023.",
-  "main": "index.js",
+  "description": "A solution for backend coding task of round 1 | Picket Homes Interview",
+  "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "tsx src/index.ts",
     "test": "jest"
   },
-  "keywords": [],
   "license": "ISC",
   "devDependencies": {
+    "@types/express": "^4.17.21",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.11.24",
+    "@types/supertest": "^6.0.2",
+    "@types/multer": "^1.4.11",
     "jest": "^29.7.0",
+    "supertest": "^6.3.4",
     "ts-jest": "^29.1.2",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.7.1",
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@types/express": "^4.17.21",
-    "@types/supertest": "^6.0.2",
+    "csv-parse": "^5.5.5",
     "express": "^4.18.3",
-    "supertest": "^6.3.4"
+    "multer": "1.4.5-lts.1"
   }
 }
