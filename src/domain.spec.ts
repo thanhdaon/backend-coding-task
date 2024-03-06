@@ -47,4 +47,25 @@ describe("Test countUniqueHouses", () => {
 
     expect(countUniqueHouses(houses)).toEqual(2);
   });
+
+  test("just 10", async () => {
+    const houses: HouseData[] = [
+      { id: "1", address: "a" },
+      { id: "1", address: "b" },
+      { id: "1", address: "c" },
+      { id: "2", address: "e" },
+      { id: "2", address: "f" },
+      { id: "2", address: "g" },
+      { id: "3", address: "h" },
+      { id: "4", address: "i" },
+      { id: "5", address: "k" },
+      { id: "6", address: "l" },
+      { id: "7", address: "m" },
+      { id: "8", address: "z" },
+      { id: "9", address: "w" },
+      { id: "10", address: "v" },
+    ];
+
+    expect(countUniqueHouses(houses)).toEqual(10);
+  });
 });
