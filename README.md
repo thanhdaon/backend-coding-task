@@ -10,6 +10,7 @@
 - Express
 - Multer
 - Jest
+- Supertest
 - Typescript
 
 # Setup
